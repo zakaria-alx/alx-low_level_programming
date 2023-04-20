@@ -1,7 +1,6 @@
-#ifndef _HEADER_
-#define _HEADER_
+#ifndef VARIADIC_FUNCTIONS
+#define VARIADIC_FUNCTIONS
 
-#include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
 
