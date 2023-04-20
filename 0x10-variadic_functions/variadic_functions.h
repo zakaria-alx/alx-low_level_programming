@@ -1,11 +1,8 @@
 #ifndef _HEADER_
 #define _HEADER_
 
-#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <stddef.h>
-#include <string.h>
 #include <stdarg.h>
 
 int _putchar(char c);
