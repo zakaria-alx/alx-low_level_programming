@@ -8,10 +8,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	if (index >= sizeof(8UL) * 8)
+	unsigned long int res = 1;
+	unsigned long int diff = n ^ m;
+
+	unsigned int i, j = 0;
+
+	for (i = 0; i < (sizeof(8UL) * 8); i++)
 	{
-		return (-1);
+		if (res == (diff & res))
+			j++;
+		res <<= 1;
 	}
-	*n ^= (1UL << index);
-	return (1);
+
+	return (j);
 }
